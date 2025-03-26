@@ -1,45 +1,80 @@
-# Go binaries and test output
-*.exe
-*.exe~
+### .NET ###
+# Build artifacts
+bin/
+obj/
 *.dll
-*.so
-*.dylib
-*.test
-*.out
+*.exe
+*.pdb
+*.pri
+*.cache
+*.ilk
+*.nupkg
+*.xml
 
-# Build directories
-/bin/
-/build/
-/dist/
+# Build results
+[Bb]uild/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.msi
+*.sln.iml
 
-# Go modules workspace (Go 1.18+)
-go.work
-go.work.sum
+# NuGet
+.nuget/
+packages/
+*.nupkg
+NuGet.exe
 
-# Dependency directories (if using vendoring)
-vendor/
-
-# Editor/IDE config
+# Rider/Visual Studio
+.vs/
 .idea/
 .vscode/
-*.swp
-*.swo
+*.suo
+*.user
+*.userprefs
+*.csproj.DotSettings.user
+*.jetBrains
+
+# Test results
+[Tt]est[Rr]esult*/
+[Ll]og/
+*.trx
+*.coverage
+coverage*.xml
 
 # OS generated files
 .DS_Store
-Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+Desktop.ini
 
-# Logs
+# Logs and temp files
 *.log
+*.tmp
+*.temp
 
-# Env files
+# Environment files
 .env
 .env.*
+*.env.local
 
 # Docker
 docker-compose.override.yml
+.dockerignore
+*.dockerfile
+docker-compose*.yml
 .docker/
-Dockerfile*
 *.tar
 *.img
-*.container
+
+# Azure
+.azure/
+*.pubxml
+
+# Local development
+appsettings.Local.json
+appsettings.Development.json
