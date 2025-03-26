@@ -1,0 +1,45 @@
+# Go binaries and test output
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Build directories
+/bin/
+/build/
+/dist/
+
+# Go modules workspace (Go 1.18+)
+go.work
+go.work.sum
+
+# Dependency directories (if using vendoring)
+vendor/
+
+# Editor/IDE config
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Env files
+.env
+.env.*
+
+# Docker
+docker-compose.override.yml
+.docker/
+Dockerfile*
+*.tar
+*.img
+*.container
