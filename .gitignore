@@ -74,7 +74,3 @@ docker-compose*.yml
 # Azure
 .azure/
 *.pubxml
-
-# Local development
-appsettings.Local.json
-appsettings.Development.json
