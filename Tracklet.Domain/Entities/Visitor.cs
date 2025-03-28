@@ -1,6 +1,6 @@
 namespace Tracklet.Domain.Entities;
 
-public class Visitors
+public class Visitor
 {
     public string Id { get; set; }
     public DateTime FirstSeen { get; set; }
