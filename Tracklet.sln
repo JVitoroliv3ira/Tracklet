@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracklet.Api", "Tracklet.Api\Tracklet.Api.csproj", "{7746651B-D9FA-4962-805F-F86182BB274D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracklet.Domain", "Tracklet.Domain\Tracklet.Domain.csproj", "{98EC1C29-8EFB-4B7C-817D-D58C2E883796}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracklet.Infra", "Tracklet.Infra\Tracklet.Infra.csproj", "{29E028B0-E7F4-4CF7-AB06-3D2FCDF21B7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7746651B-D9FA-4962-805F-F86182BB274D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7746651B-D9FA-4962-805F-F86182BB274D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7746651B-D9FA-4962-805F-F86182BB274D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7746651B-D9FA-4962-805F-F86182BB274D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98EC1C29-8EFB-4B7C-817D-D58C2E883796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EC1C29-8EFB-4B7C-817D-D58C2E883796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EC1C29-8EFB-4B7C-817D-D58C2E883796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EC1C29-8EFB-4B7C-817D-D58C2E883796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E028B0-E7F4-4CF7-AB06-3D2FCDF21B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E028B0-E7F4-4CF7-AB06-3D2FCDF21B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E028B0-E7F4-4CF7-AB06-3D2FCDF21B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E028B0-E7F4-4CF7-AB06-3D2FCDF21B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

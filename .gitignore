@@ -1,0 +1,76 @@
+### .NET ###
+# Build artifacts
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.pri
+*.cache
+*.ilk
+*.nupkg
+*.xml
+
+# Build results
+[Bb]uild/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.msi
+*.sln.iml
+
+# NuGet
+.nuget/
+packages/
+*.nupkg
+NuGet.exe
+
+# Rider/Visual Studio
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.userprefs
+*.csproj.DotSettings.user
+*.jetBrains
+
+# Test results
+[Tt]est[Rr]esult*/
+[Ll]og/
+*.trx
+*.coverage
+coverage*.xml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+Desktop.ini
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.*
+*.env.local
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+*.dockerfile
+docker-compose*.yml
+.docker/
+*.tar
+*.img
+
+# Azure
+.azure/
+*.pubxml
