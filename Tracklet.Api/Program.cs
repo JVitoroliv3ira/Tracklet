@@ -1,6 +1,8 @@
 using FluentMigrator.Runner;
 using Microsoft.EntityFrameworkCore;
 using Tracklet.Infra.Data;
+using Tracklet.Infra.Data.Contexts;
+using Tracklet.Infra.Data.Migrations;
 
 var builder = WebApplication.CreateBuilder(args);
 

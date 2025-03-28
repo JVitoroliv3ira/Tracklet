@@ -1,7 +1,7 @@
 using FluentMigrator.Runner;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Tracklet.Infra.Data;
+namespace Tracklet.Infra.Data.Migrations;
 
 public static class MigrationRunner
 {
