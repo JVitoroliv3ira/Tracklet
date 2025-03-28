@@ -1,8 +1,11 @@
 using FluentMigrator.Runner;
 using Microsoft.EntityFrameworkCore;
+using Tracklet.Domain.Entities;
 using Tracklet.Infra.Data;
 using Tracklet.Infra.Data.Contexts;
 using Tracklet.Infra.Data.Migrations;
+using Tracklet.Infra.Data.Repositories.Base;
+using Tracklet.Infra.Data.Repositories.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +23,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(o =>
 );
 
 builder.Services.AddFluentMigrator(migrationConnectionString);
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 

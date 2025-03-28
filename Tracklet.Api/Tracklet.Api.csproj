@@ -18,8 +18,4 @@
       <ProjectReference Include="..\Tracklet.Infra\Tracklet.Infra.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Controllers\v1\" />
-    </ItemGroup>
-
 </Project>
