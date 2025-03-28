@@ -1,45 +1,42 @@
 # Tracklet
 
-**Coleta e análise simplificada de métricas de acesso para aplicações web**  
+**Solução de monitoramento web simplificada com SDK integrado**  
 
-O Tracklet é uma solução backend minimalista para monitorar o tráfego de aplicações web em tempo real. Projetado para desenvolvedores que buscam dados essenciais sem complexidade.
-
----
-
-## 🧩 Funcionalidades
-- **Rastreamento básico de acesso**: URLs, horários e metadados de dispositivo.
-- **Sessões de usuário**: Agrupamento automático de atividades em janelas de 30 minutos.
-- **API dual-mode**: Suporte a gRPC (alta performance) e HTTP/JSON (compatibilidade).
-- **Visualização imediata**: Gráficos de barras para tendências diárias/horárias.
+Backend em .NET 8 para coleta de métricas de acesso via SDK client-side. Foco em implementação direta e baixa latência.
 
 ---
 
-## ⚙️ Tecnologias Principais
-- **Linguagem**: Go (Golang) para eficiência e concorrência.
-- **Comunicação**: gRPC para operações críticas, HTTP para flexibilidade.
-- **Armazenamento**: SQLite (embutido) com migração futura para PostgreSQL.
-- **Visualização**: Chart.js para renderização client-side de dados.
+## 🧩 Funcionalidades-Chave
+- **SDK de Coleta**: Componente leve para envio de eventos (Web/JS ou .NET)
+- **Sessões Automáticas**: Agrupamento de atividades em janelas de 30min
+- **Metadados Ricos**: Dispositivo, geolocalização e dados técnicos
+- **API REST**: Endpoints para integração e consulta de dados brutos
 
 ---
 
-## 🏗️ Arquitetura do Sistema
+## ⚙️ Stack Técnica
+- **Backend**: .NET 8 (Minimal APIs + EF Core)
+- **SDK Client**: Pacote NuGet/NPM para coleta de eventos
+- **Armazenamento**: PostgreSQL com otimização temporal
+- **Protocolo**: HTTP/JSON com compressão
+
+---
+
+## 🏗️ Fluxo de Dados
 ```plaintext
-Cliente (Web/Mobile)
-       │
-       ▼
-  [SDK Leve] → Envio de Eventos (gRPC/HTTP)
-       │           
-       ▼
-[Serviço Tracklet] → Processamento e Armazenamento (SQLite)
-       │
-       ▼
-[Dashboard Web] ← Consulta de Métricas via API
+        [Aplicação Monitorada]
+              │
+              ▼ (SDK Embedded)
+         [Eventos]
+              │
+              ▼ (HTTP/JSON)
+  [Tracklet API] → (.NET 8)
+              │           
+              ▼ (Processamento)
+[PostgreSQL] → (Sessões/Métricas)
+              │
+              ▼ (Consulta)
+        [Dashboard/BI]
 ```
 
 ---
-
-## 📌 Próximas Etapas
-- **Filtragem de dados**: Por intervalo de datas, tipo de dispositivo ou URL.
-- **Métricas avançadas**: Taxa de rejeição, tempo médio por sessão.
-- **Segurança**: Autenticação básica para endpoints de API.
-- **Documentação técnica**: Especificações gRPC e guia de contribuição.
